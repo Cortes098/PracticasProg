@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <string>
 #include <time.h>
 
@@ -82,5 +82,5 @@ int main()
 	{
 		std::cout <<"NAME: "<< enemies[i].name << "\n" <<"TYPE: "<<getEnemyTypeString(enemies[i]) << "\n"<<"HEALTH: " << enemies[i].health<<"\n\n\n";
 	}	
-}
+}*/
 

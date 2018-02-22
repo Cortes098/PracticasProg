@@ -1,4 +1,7 @@
-﻿  Source.cpp
-c:\users\xavierortigosacortes\documents\visual studio 2017\projects\project1\project1\source.cpp(56): warning C4715: 'getEnemyTypeString': not all control paths return a value
-  Project1.vcxproj -> c:\users\xavierortigosacortes\documents\visual studio 2017\Projects\Project1\Debug\Project1.exe
-  Project1.vcxproj -> c:\users\xavierortigosacortes\documents\visual studio 2017\Projects\Project1\Debug\Project1.pdb (Partial PDB)
+﻿  AA1_002.cpp
+c:\users\xavierortigosacortes\documents\practicasprog\project1\project1\aa1_002.cpp(41): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\xavierortigosacortes\documents\practicasprog\project1\project1\aa1_002.cpp(42): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\xavierortigosacortes\documents\practicasprog\project1\project1\aa1_002.cpp(109): warning C4715: 'checkMovement': not all control paths return a value
+c:\users\xavierortigosacortes\documents\practicasprog\project1\project1\aa1_002.cpp(147): warning C4715: 'existCoin': not all control paths return a value
+  Project1.vcxproj -> C:\Users\xavierortigosacortes\Documents\PracticasProg\Project1\Debug\Project1.exe
+  Project1.vcxproj -> C:\Users\xavierortigosacortes\Documents\PracticasProg\Project1\Debug\Project1.pdb (Partial PDB)
