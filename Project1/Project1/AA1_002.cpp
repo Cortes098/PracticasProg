@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <string>
 #include <time.h>
 
@@ -178,4 +178,4 @@ void main()
 
 	my_player.initializeBoard(BOARD);
 	printBoard(BOARD);
-}
+}*/
