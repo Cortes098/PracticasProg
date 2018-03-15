@@ -1,0 +1,8 @@
+﻿  Source.cpp
+c:\users\xavierortigosacortes\documents\practicasprog\project1\aa1_06\source.cpp(17): warning C4018: '<': signed/unsigned mismatch
+c:\users\xavierortigosacortes\documents\practicasprog\project1\aa1_06\source.cpp(27): warning C4018: '<': signed/unsigned mismatch
+c:\users\xavierortigosacortes\documents\practicasprog\project1\aa1_06\source.cpp(51): warning C4018: '<': signed/unsigned mismatch
+c:\users\xavierortigosacortes\documents\practicasprog\project1\aa1_06\source.cpp(53): warning C4018: '<': signed/unsigned mismatch
+c:\users\xavierortigosacortes\documents\practicasprog\project1\aa1_06\source.cpp(86): warning C4715: 'isPalindrome': not all control paths return a value
+  AA1_06.vcxproj -> C:\Users\xavierortigosacortes\Documents\PracticasProg\Project1\Debug\AA1_06.exe
+  AA1_06.vcxproj -> C:\Users\xavierortigosacortes\Documents\PracticasProg\Project1\Debug\AA1_06.pdb (Partial PDB)
