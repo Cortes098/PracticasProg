@@ -6,6 +6,7 @@
 #include <Windows.h>
 #include <vector>
 
+
 struct Vec2
 {
 	int x;
@@ -15,20 +16,26 @@ struct Vec2
 class Boar
 {	
 public:
+
+	enum Movement { LEFT, RIGHT };
+
 	char **board;
 	char delimiter;	
 	int maxscore, countscore;
 
-	Vec2 playerPos;
+	Vec2 playerPos[3];
 	std::vector <std::string> vecSizes;
 
 	Boar();
 	void InitializeBoard();
 	void printBoard();
+	void movePlayer(Movement Dir);
+	void adjustPlayer();
 	~Boar();
 
 private:
 	enum CharName { NONE, PLAYER, BLOCK, BALL, WALLV, WALLH };
+
 	char g_CharCode[6] = { ' ', '@', '*','-','|', '_' };
 	int NUMROWS, NUMCOL, ROWBLOCK;
 };
