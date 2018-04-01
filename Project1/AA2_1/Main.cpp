@@ -13,14 +13,14 @@ int main(int, char *[])
 	Boar myB;
 	myB.InitializeBoard();
 
-	while(!GameOver)
-	{		
+			
 		while (!GameOver)
 		{
-			Sleep(50);
+			
+			Sleep(100);
 			system("cls");
 			myB.printBoard();
-
+			myB.moveBall();
 			if(GetKeyState(VK_LEFT) < 0)
 			{
 				myB.movePlayer(myB.LEFT);
@@ -36,6 +36,6 @@ int main(int, char *[])
 		}
 
 
-	}
+	
 	return 0;
 }

@@ -26,6 +26,8 @@ Boar::Boar()
 	playerPos[0] = { NUMROWS - 5, NUMCOL / 2 };
 	playerPos[1] = { NUMROWS - 5, (NUMCOL / 2)+1 };
 	playerPos[2] = { NUMROWS - 5, (NUMCOL / 2)+2 };
+	ball = { NUMROWS - 6, (NUMCOL / 2) + 1 };
+	velocity = { 1,1 };
 }
 void Boar::adjustPlayer() 
 {
@@ -45,6 +47,18 @@ void Boar::adjustPlayer()
 		
 }
 
+void Boar::moveBall()
+{
+	board[ball.x][ball.y] = CharName::NONE;
+	
+	if (ball.y == 1 || ball.y == NUMROWS - 2)
+		velocity.y = -(velocity.y);
+	if (ball.x == 1 || ball.x == NUMCOL -2)
+		velocity.x = -(velocity.x);
+	board[ball.x += -velocity.x][ball.y += velocity.y] = CharName::BALL;
+
+}
+
 void Boar::InitializeBoard()
 {	
 	for (int i = 0; i<NUMROWS; i++)
@@ -62,6 +76,7 @@ void Boar::InitializeBoard()
 				board[i][j] = CharName::PLAYER;
 				
 			}
+			else if(i == ball.x && j == ball.y) board[i][j] = CharName::BALL;
 			else											board[i][j] = CharName::NONE;
 		}
 	}
@@ -112,6 +127,7 @@ void Boar::printBoard()
 			else if (board[i][j] == CharName::BLOCK)	std::cout << g_CharCode[1];
 			else if (board[i][j] == CharName::PLAYER)	std::cout << g_CharCode[3];
 			else if (board[i][j] == CharName::NONE)		std::cout << g_CharCode[0];
+			else if (board[i][j] == CharName::BALL)		std::cout << g_CharCode[2];
 
 			std::cout << g_CharCode[0];
 		}
