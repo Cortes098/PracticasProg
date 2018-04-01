@@ -46,7 +46,7 @@ void Boar::adjustPlayer()
 	}
 		
 }
-<<<<<<< HEAD
+
 
 void Boar::moveBall()
 {
@@ -60,8 +60,7 @@ void Boar::moveBall()
 
 }
 
-=======
->>>>>>> bebf3776999cc183b38ac095408c99f96518d3dd
+
 void Boar::InitializeBoard()
 {	
 	for (int i = 0; i<NUMROWS; i++)
@@ -146,7 +145,7 @@ void Boar::movePlayer(Movement Dir)
 		{
 			if (playerPos[i].y == 1)
 			{
-				playerPos[i].y = 18;
+				playerPos[i].y = NUMROWS-2;
 			}
 			else
 			{
@@ -160,7 +159,7 @@ void Boar::movePlayer(Movement Dir)
 		board[playerPos[0].x][playerPos[0].y] = CharName::NONE;
 		for (int i = 0; i < 3; i++)
 		{
-			if(playerPos[i].y==18)
+			if(playerPos[i].y== NUMROWS - 2)
 			{
 				playerPos[i].y = 1;
 			}
