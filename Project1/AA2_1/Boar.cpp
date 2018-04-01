@@ -46,6 +46,7 @@ void Boar::adjustPlayer()
 	}
 		
 }
+<<<<<<< HEAD
 
 void Boar::moveBall()
 {
@@ -59,6 +60,8 @@ void Boar::moveBall()
 
 }
 
+=======
+>>>>>>> bebf3776999cc183b38ac095408c99f96518d3dd
 void Boar::InitializeBoard()
 {	
 	for (int i = 0; i<NUMROWS; i++)
@@ -108,7 +111,6 @@ void Boar::InitializeBoard()
 		std::cout << std::endl;
 	}	
 }
-
 void Boar::printBoard()
 {
 	for (int i = 0; i < NUMROWS; i++) 
@@ -160,7 +162,7 @@ void Boar::movePlayer(Movement Dir)
 		{
 			if(playerPos[i].y==18)
 			{
-				playerPos[i].y = 2;
+				playerPos[i].y = 1;
 			}
 			else
 			{

@@ -25,7 +25,10 @@ public:
 
 	Vec2 playerPos[3];
 	Vec2 ball;
+<<<<<<< HEAD
 	Vec2 velocity;
+=======
+>>>>>>> bebf3776999cc183b38ac095408c99f96518d3dd
 	std::vector <std::string> vecSizes;
 	Boar();
 	void InitializeBoard();
