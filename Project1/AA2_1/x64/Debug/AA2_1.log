@@ -1,4 +1,7 @@
-﻿  Boar.cpp
-d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\boar.cpp(38): warning C4553: '==': el operador no tiene efecto; ¿ha pensado en '='?
-d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\boar.cpp(39): warning C4553: '==': el operador no tiene efecto; ¿ha pensado en '='?
+﻿  Main.cpp
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\main.cpp(5): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\main.cpp(10): warning C4101: 'score': variable local sin referencia
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\main.cpp(12): warning C4101: 'input': variable local sin referencia
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\main.cpp(10): warning C4101: 'countCoins': variable local sin referencia
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\main.cpp(9): warning C4101: 'position': variable local sin referencia
   AA2_1.vcxproj -> D:\Enti\proyecto2\GutIo\PracticasProg\Project1\x64\Debug\AA2_1.exe

@@ -1,4 +1,4 @@
-#include "Boar.h"
+#include "Board.h"
 
 int main(int, char *[])
 {
@@ -10,7 +10,7 @@ int main(int, char *[])
 	int score, countCoins; //mantiene el número de monedas recogidas
 	bool GameOver=false;
 	char input;
-	Boar myB;
+	Board myB;
 	myB.InitializeBoard();
 
 			
