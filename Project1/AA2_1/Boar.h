@@ -24,6 +24,7 @@ public:
 	int maxscore, countscore;
 
 	Vec2 playerPos[3];
+	vec2 ball;
 	std::vector <std::string> vecSizes;
 
 	Boar();

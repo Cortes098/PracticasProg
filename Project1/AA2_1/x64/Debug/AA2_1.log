@@ -1,4 +1,11 @@
-﻿  Boar.cpp
-c:\users\xavie\onedrive\documentos\github\practicasprog\project1\aa2_1\boar.cpp(36): warning C4553: '==': el operador no tiene efecto; ¿ha pensado en '='?
-c:\users\xavie\onedrive\documentos\github\practicasprog\project1\aa2_1\boar.cpp(37): warning C4553: '==': el operador no tiene efecto; ¿ha pensado en '='?
-  AA2_1.vcxproj -> C:\Users\xavie\OneDrive\Documentos\GitHub\PracticasProg\Project1\x64\Debug\AA2_1.exe
+﻿  Main.cpp
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\main.cpp(5): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\main.cpp(10): warning C4101: 'score': variable local sin referencia
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\main.cpp(12): warning C4101: 'input': variable local sin referencia
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\main.cpp(10): warning C4101: 'countCoins': variable local sin referencia
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\main.cpp(9): warning C4101: 'position': variable local sin referencia
+  Boar.cpp
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\boar.cpp(36): warning C4553: '==': el operador no tiene efecto; ¿ha pensado en '='?
+d:\enti\proyecto2\gutio\practicasprog\project1\aa2_1\boar.cpp(37): warning C4553: '==': el operador no tiene efecto; ¿ha pensado en '='?
+  Generando código...
+  AA2_1.vcxproj -> D:\Enti\proyecto2\GutIo\PracticasProg\Project1\x64\Debug\AA2_1.exe
