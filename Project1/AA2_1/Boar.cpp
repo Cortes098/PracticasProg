@@ -24,8 +24,8 @@ Boar::Boar()
 		board[i] = new char[NUMCOL];
 	}	
 	playerPos[0] = { NUMROWS - 5, NUMCOL / 2 };
-	playerPos[1] = { NUMROWS - 5, (NUMCOL / 2)-1 };
-	playerPos[2] = { NUMROWS - 5, (NUMCOL / 2)+1 };
+	playerPos[1] = { NUMROWS - 5, (NUMCOL / 2)+1 };
+	playerPos[2] = { NUMROWS - 5, (NUMCOL / 2)+2 };
 }
 void Boar::adjustPlayer() 
 {
@@ -120,24 +120,36 @@ void Boar::printBoard()
 }
 
 void Boar::movePlayer(Movement Dir)
-{
-	
-	
+{	
 	if (Dir == LEFT) 
 	{
 		board[playerPos[2].x][playerPos[2].y] = CharName::NONE;
 		for (int i = 0; i < 3; i++)
 		{
-			playerPos[i].y -= 1;			
+			if (playerPos[i].y == 1)
+			{
+				playerPos[i].y = 18;
+			}
+			else
+			{
+				playerPos[i].y -= 1;
+			}
 		}		
 	}
 
 	else if(Dir==RIGHT)
 	{
-		board[playerPos[1].x][playerPos[1].y] = CharName::NONE;
+		board[playerPos[0].x][playerPos[0].y] = CharName::NONE;
 		for (int i = 0; i < 3; i++)
 		{
-			playerPos[i].y += 1;			
+			if(playerPos[i].y==18)
+			{
+				playerPos[i].y = 2;
+			}
+			else
+			{
+				playerPos[i].y += 1;
+			}
 		}
 	}
 }
