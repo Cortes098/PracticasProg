@@ -24,6 +24,9 @@
     <ClCompile Include="AA1_003.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AA1_009.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">

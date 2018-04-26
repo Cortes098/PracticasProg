@@ -114,6 +114,7 @@
     <ClCompile Include="AA1_001.cpp" />
     <ClCompile Include="AA1_002.cpp" />
     <ClCompile Include="AA1_003.cpp" />
+    <ClCompile Include="AA1_009.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.h" />
