@@ -2,25 +2,18 @@
 
 int main(int, char *[])
 {
-	srand(time(NULL));
-
-	
-
-	Vec2 position;
-	int score, countCoins; //mantiene el número de monedas recogidas
-	bool GameOver=false;
+	int score; //mantiene el número de monedas recogidas	
 	char input;
 	Board myB;
 	myB.InitializeBoard();
-
-			
-		while (!GameOver)
+				
+		while (!myB.platform.GameOver)
 		{
 			
-			Sleep(100);
+			Sleep(500);
 			system("cls");
-			myB.printBoard();
-			myB.moveBall();
+						
+			
 			if(GetKeyState(VK_LEFT) < 0)
 			{
 				myB.movePlayer(myB.LEFT);
@@ -33,9 +26,17 @@ int main(int, char *[])
 			{
 				return 0;
 			}
+			myB.moveBall();
+
+			myB.printBoard();
+			std::cout<<myB.platform.score<<std::endl;
+		}	
+		while (true)
+		{
+			if (GetKeyState(VK_ESCAPE) < 0)
+			{
+				return 0;
+			}
 		}
-
-
-	
 	return 0;
 }

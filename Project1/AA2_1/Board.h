@@ -1,31 +1,32 @@
 #pragma once
+#include "Platform.h"
 #include <iostream>
 #include <fstream>
 #include <time.h>
 #include <string>
 #include <Windows.h>
 #include <vector>
+#include <queue>
 
-
-struct Vec2
+struct Ball 
 {
-	int x;
-	int y;
+	char x;
+	char y;
 };
 
 class Board
 {	
+	
 public:
 
+	Platform platform;
 	enum Movement { LEFT, RIGHT };
 
 	char **board;
 	char delimiter;	
-	int maxscore, countscore;
+	
 
-	Vec2 playerPos[3];
 	Vec2 ball;
-
 	Vec2 velocity;
 
 	std::vector <std::string> vecSizes;
@@ -35,12 +36,15 @@ public:
 	void movePlayer(Movement Dir);
 	void adjustPlayer();
 	void moveBall();
+	void addPoints();
 	~Board();
 
 private:
-	enum CharName { NONE, PLAYER, BLOCK, BALL, WALLV, WALLH };
-
-	char g_CharCode[6] = { ' ', '@', '*','-','|', '_' };
 	int NUMROWS, NUMCOL, ROWBLOCK;
-};
+	Vec2 minmax;
+	std::queue<int> Qpoints;
+	enum CharName { NONE, PLAYER, BLOCK, BALL, WALLV, WALLH };
+	char g_CharCode[6] = { ' ', '-', '@','*','|', '_' };
 
+	
+};
