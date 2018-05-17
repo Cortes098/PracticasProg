@@ -1,7 +1,9 @@
-﻿  Board.cpp
-c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.cpp(5): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+﻿  Platform.cpp
   Main.cpp
-c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(5): warning C4101: 'score': variable local sin referencia
-c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(6): warning C4101: 'input': variable local sin referencia
-  Generando código...
-  AA2_1.vcxproj -> C:\Users\xavie\Documents\GitHub\PracticasProg\Project1\Debug\AA2_1.exe
+c:\users\xavierortigosacortes\documents\practicasprog\project1\aa2_1\main.cpp(5): warning C4101: 'score': unreferenced local variable
+c:\users\xavierortigosacortes\documents\practicasprog\project1\aa2_1\main.cpp(6): warning C4101: 'input': unreferenced local variable
+  Board.cpp
+c:\users\xavierortigosacortes\documents\practicasprog\project1\aa2_1\board.cpp(5): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  AA2_1.vcxproj -> C:\Users\xavierortigosacortes\Documents\PracticasProg\Project1\Debug\AA2_1.exe
+  AA2_1.vcxproj -> C:\Users\xavierortigosacortes\Documents\PracticasProg\Project1\Debug\AA2_1.pdb (Partial PDB)
