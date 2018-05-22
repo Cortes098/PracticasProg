@@ -81,13 +81,16 @@ void Board::moveBall()
 		velocity.x = -(velocity.x);
 		addPoints();
 	}
-	for (int i = 0; i < 3; i++)
-	{
-		if ((ball.x+velocity.x == platform.positions[i].x) && (ball.y+velocity.y == platform.positions[i].y))
+	
+		if (board[ball.x + velocity.x][ball.y] == CharName::PLAYER)
 		{
 			velocity.x = -(velocity.x);
 		}
-	}
+		else if (board[ball.x + velocity.x][ball.y+velocity.y] == CharName::PLAYER)
+		{
+			velocity.y = -(velocity.y);
+		}
+	
 
 	if ((ball.x < 2) || (ball.x >= NUMCOL - 2))
 	{
@@ -148,7 +151,7 @@ void Board::InitializeBoard()
 			default:
 				break;
 			}
-			std::cout << g_CharCode[0];
+			
 		}
 		std::cout << std::endl;
 	}	
@@ -172,12 +175,6 @@ void Board::printBoard()
 			else if (board[i][j] == CharName::BALL)		std::cout << g_CharCode[3];
 			else if(board[i][j] == CharName::WALLV)			std::cout << g_CharCode[4];
 			else if (board[i][j] == CharName::WALLH)	std::cout << g_CharCode[5];
-			
-			
-			
-			
-
-			std::cout << g_CharCode[0];
 		}
 		std::cout << std::endl;
 	}
