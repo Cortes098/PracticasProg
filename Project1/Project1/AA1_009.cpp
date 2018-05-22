@@ -4,7 +4,7 @@
 #include <string>
 #include <algorithm>
 
-void printM(std::map<std::string, int> map)
+/*void printM(std::map<std::string, int> map)
 {	
 	while (map.size()>0)
 	{
@@ -72,7 +72,7 @@ void addPlayerV(std::vector<std::pair<std::string, int>> &vector)
 		std::cout << "Nombre ya en uso, introduce otro" << std::endl;
 		std::cin >> name;
 		it = std::find(vector.begin(), vector.end(), name);
-	}*/	
+	}
 
 	std::cout << "Introduce puntuacion del jugador" << std::endl;
 	std::cin >> points;
@@ -103,4 +103,4 @@ void main()
 	addPlayerV(v_ranking);
 	printV(v_ranking);
 
-}
+}*/
