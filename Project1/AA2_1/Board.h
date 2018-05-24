@@ -7,6 +7,7 @@
 #include <Windows.h>
 #include <vector>
 #include <queue>
+#include <stack>
 
 struct Ball 
 {
@@ -20,7 +21,7 @@ class Board
 public:
 
 	Platform platform;
-	enum Movement { LEFT, RIGHT };
+	enum Movement { LEFT, RIGHT, EXIT};
 
 	char **board;
 	char delimiter;	
