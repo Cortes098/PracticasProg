@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <time.h>
 
 int* lineaSearchMultiple1(int _arr[], int size, int value) 
@@ -46,4 +46,4 @@ void main()
 		std::cout << arr[i] << " - "<< std::endl;;
 	}
 
-}
+}*/

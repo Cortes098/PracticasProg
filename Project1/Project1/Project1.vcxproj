@@ -115,10 +115,15 @@
     <ClCompile Include="AA1_002.cpp" />
     <ClCompile Include="AA1_003.cpp" />
     <ClCompile Include="AA1_009.cpp" />
+    <ClCompile Include="MyList.cpp" />
+    <ClCompile Include="my_forwardList.cpp" />
     <ClCompile Include="Otr%40s.cpp" />
+    <ClCompile Include="recu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.h" />
+    <ClInclude Include="MyList.h" />
+    <ClInclude Include="my_forwardList.h" />
     <ClInclude Include="Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

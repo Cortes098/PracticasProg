@@ -1,3 +1,7 @@
-﻿  Otr@s.cpp
-  Project1.vcxproj -> C:\Users\xavierortigosacortes\Documents\PracticasProg\Project1\Debug\Project1.exe
-  Project1.vcxproj -> C:\Users\xavierortigosacortes\Documents\PracticasProg\Project1\Debug\Project1.pdb (Partial PDB)
+﻿  recu.cpp
+  Otr@s.cpp
+  my_forwardList.cpp
+c:\users\xavierortigosacortes\documents\practicasprog\project1\project1\my_forwardlist.h(6): error C2461: 'node': constructor syntax missing formal parameters
+  MyList.cpp
+c:\users\xavierortigosacortes\documents\practicasprog\project1\project1\mylist.h(6): error C2461: 'node': constructor syntax missing formal parameters
+  Generating Code...
