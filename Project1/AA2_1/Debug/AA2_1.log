@@ -1,2 +1,57 @@
-﻿  Main.cpp
-  AA2_1.vcxproj -> C:\Users\xavie\Documents\GitHub\PracticasProg\Project1\Debug\AA2_1.exe
+﻿  Board.cpp
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(53): error C2039: 'map': no es un miembro de 'std'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.13.26128\include\stack(223): note: vea la declaración de 'std'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(53): error C2143: error de sintaxis: falta ';' delante de '<'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(53): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(53): error C2039: 'iterator': no es un miembro de '`global namespace''
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(54): error C2039: 'map': no es un miembro de 'std'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.13.26128\include\stack(223): note: vea la declaración de 'std'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(54): error C2143: error de sintaxis: falta ';' delante de '<'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(54): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(54): error C2086: 'int map': nueva definición
+  c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(53): note: vea la declaración de 'map'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(54): error C2039: 'iterator': no es un miembro de '`global namespace''
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(56): error C2065: '_ranking': identificador no declarado
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(56): error C2228: el operando izquierdo de '.size' debe tener class/struct/union
+  c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(56): note: el tipo es 'unknown-type'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(58): error C2059: error de sintaxis: 'if'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(59): error C2143: error de sintaxis: falta ';' delante de '{'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(59): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(64): error C2059: error de sintaxis: 'else'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(65): error C2143: error de sintaxis: falta ';' delante de '{'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(65): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.cpp(5): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.cpp(116): warning C4553: '==': el operador no tiene efecto; ¿ha pensado en '='?
+  Main.cpp
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(53): error C2039: 'map': no es un miembro de 'std'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.13.26128\include\stack(223): note: vea la declaración de 'std'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(53): error C2143: error de sintaxis: falta ';' delante de '<'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(53): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(53): error C2039: 'iterator': no es un miembro de '`global namespace''
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(54): error C2039: 'map': no es un miembro de 'std'
+  c:\program files (x86)\microsoft visual studio\2017\professional\vc\tools\msvc\14.13.26128\include\stack(223): note: vea la declaración de 'std'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(54): error C2143: error de sintaxis: falta ';' delante de '<'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(54): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(54): error C2086: 'int map': nueva definición
+  c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(53): note: vea la declaración de 'map'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(54): error C2039: 'iterator': no es un miembro de '`global namespace''
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(56): error C2065: '_ranking': identificador no declarado
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(56): error C2228: el operando izquierdo de '.size' debe tener class/struct/union
+  c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(56): note: el tipo es 'unknown-type'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(58): error C2059: error de sintaxis: 'if'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(59): error C2143: error de sintaxis: falta ';' delante de '{'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(59): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(64): error C2059: error de sintaxis: 'else'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(65): error C2143: error de sintaxis: falta ';' delante de '{'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.h(65): error C2447: '{': falta el encabezado de función (¿lista formal de estilo anterior?)
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(56): error C2065: 'it': identificador no declarado
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(58): error C2065: 'it': identificador no declarado
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(58): error C2227: el operando izquierdo de '->second' debe señalar al tipo class/struct/union/generic
+  c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(58): note: el tipo es 'unknown-type'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(58): error C2065: 'aux': identificador no declarado
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(60): error C2065: 'aux': identificador no declarado
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(60): error C2065: 'it': identificador no declarado
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(63): error C2065: 'aux': identificador no declarado
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(63): error C2059: error de sintaxis: '<<'
+c:\users\xavie\documents\github\practicasprog\project1\aa2_1\main.cpp(73): error C2227: el operando izquierdo de '->ranking' debe señalar al tipo class/struct/union/generic
+  Generando código...

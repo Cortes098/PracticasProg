@@ -1,26 +1,79 @@
 #include "Board.h"
 #include <map>
+
 enum class InputKey { NONE, ESC, LEFT, RIGHT, ENTER, PAUSE, NUM1, NUM2, NUM0, NUM_KEYS };
+
+std::map<std::string, int> iniRanking()
+{
+	std::map<std::string, int> _ranking;
+	std::string str;
+	int num;
+
+	std::ifstream MyFileRead("ranking.txt", std::ios::binary);
+	for (int i = 0; !MyFileRead.eof(); i++)
+	{
+		MyFileRead >> str >> num;
+		if (num >= 0 && str != "")
+		{
+			_ranking[str] = { num };
+		}
+	}
+	MyFileRead.close();
+	return _ranking;
+}
+void printScore(std::map<std::string, int> _ranking)
+{
+	while (_ranking.size() > 0)
+	{
+		std::map<std::string, int>::iterator aux = _ranking.begin();
+		std::map<std::string, int>::iterator it = _ranking.begin();
+
+		for (; it != _ranking.end(); ++it)
+		{
+			if (it->second > aux->second)
+			{
+				aux = it;
+			}
+		}
+		std::cout << aux->first << ": " << aux->second << std::endl;
+		_ranking.erase(aux);
+	}
+}
+void insertPlayer(std::map<std::string, int> _ranking, std::string _name, int _score)
+{
+	if (mida <= 5)
+	{
+		std::ofstream MyFileWrite("ranking.txt", std::ios::app);
+		if (MyFileWrite.is_open())	MyFileWrite << _name << ' ' << _score << ' ';
+		MyFileWrite.close();
+	}
+	else
+	{
+		std::ofstream MyFileWrite("ranking.txt", std::ios::out);
+		if (MyFileWrite.is_open()) {
+			while (mida > 1)
+			{
+				for (; it != _ranking.end(); ++it)
+				{
+					if (it->second > aux->second)
+					{
+						aux = it;
+					}
+				}
+				MyFileWrite << aux-> << ' ' << _score << ' ';
+
+			}
+		}
+	}
+}
 
 int main(int, char *[])
 {
 	//*************RANKING_INI*************//
 	std::map<std::string, int> ranking;
-	std::string str;
-	int num;
-
-	std::ifstream MyFileRead("ranking.bin", std::ios::binary);
-	for (int i = 0; !MyFileRead.eof() && !ranking.empty() && i<5; i++)
-	{
-		MyFileRead >> str >> num;
-		if (num >= 0 && str != "")
-		{
-			ranking[str] = { num };
-		}
-	}
-	MyFileRead.close();
+	ranking = iniRanking();
 	//**************************//
-
+	std::string namePlayer;
 
 	Board myB;
 	myB.InitializeBoard();
@@ -72,7 +125,7 @@ int main(int, char *[])
 			std::cout << "2-Ranking" << std::endl;
 			std::cout << "0-Exit" << std::endl;
 			break;
-		
+
 		case GameState::PLAY:
 			//*********EVENTHANDLE*********//
 			if (GetKeyState(VK_LEFT) < 0)
@@ -110,13 +163,22 @@ int main(int, char *[])
 			//*********PRINT*********//
 			std::cout << myB.platform.lives << std::endl;
 			std::cout << myB.platform.score << std::endl;
-			myB.printBoard();			
+			myB.printBoard();
 			break;
 		case GameState::SCORE:
-
-
+			printScore(ranking);
+			std::cin >> namePlayer;
+			insertPlayer(ranking, namePlayer, myB.platform.score);
+			myGameState = GameState::RANKING;
 			break;
 		case GameState::RANKING:
+			if (GetKeyState(VK_ESCAPE) < 0)
+			{
+				my_input.push(InputKey::ESC);
+			}
+			ranking = iniRanking();
+			printScore(ranking);
+			std::cin >> namePlayer;
 
 			break;
 		case GameState::EXIT:
@@ -137,11 +199,3 @@ int main(int, char *[])
 	return 0;
 }
 
-void printScore(std::map<std::string, int> _ranking)
-{
-	std::map<std::string, int>::iterator it;
-	for (it=_ranking.begin();it!=_ranking.end();it++) 
-	{
-
-	}
-}

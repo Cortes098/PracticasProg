@@ -49,3 +49,35 @@ private:
 
 	
 };
+
+std::map<std::string, int>::iterator aux = _ranking.begin();
+std::map<std::string, int>::iterator it = _ranking.begin();
+
+int mida = _ranking.size();
+
+if (mida <= 5)
+{
+	std::ofstream MyFileWrite("ranking.txt", std::ios::app);
+	if (MyFileWrite.is_open())	MyFileWrite << _name << ' ' << _score << ' ';
+	MyFileWrite.close();
+}
+else
+{
+	std::ofstream MyFileWrite("ranking.txt", std::ios::out);
+
+	if (MyFileWrite.is_open()) {
+		while (mida > 1)
+		{
+			for (; it != _ranking.end(); ++it)
+			{
+				if (it->second > aux->second)
+				{
+					aux = it;
+				}
+			}
+			MyFileWrite << aux-> << ' ' << _score << ' ';
+			_ranking.erase(aux);
+		}
+	}
+}
+

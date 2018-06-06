@@ -120,6 +120,8 @@ void Board::moveBall()
 	ball.x += velocity.x;
 	ball.y += velocity.y;
 
+	
+
 	board[ball.x][ball.y] = CharName::BALL;
 }
 void Board::InitializeBoard()
