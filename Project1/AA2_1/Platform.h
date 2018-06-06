@@ -9,6 +9,7 @@ class Platform
 {
 public:
 	int score;
+	int lives;
 	Vec2 positions[3];
 	bool GameOver;
 

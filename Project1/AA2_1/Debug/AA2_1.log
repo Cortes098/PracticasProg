@@ -1,3 +1,2 @@
-﻿  Board.cpp
-c:\users\xavie\documents\github\practicasprog\project1\aa2_1\board.cpp(5): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+﻿  Main.cpp
   AA2_1.vcxproj -> C:\Users\xavie\Documents\GitHub\PracticasProg\Project1\Debug\AA2_1.exe
