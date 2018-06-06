@@ -30,12 +30,27 @@
     <ClCompile Include="Otr%40s.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="recu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="my_forwardList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Board.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="my_forwardList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
